@@ -1,0 +1,30 @@
+﻿@model IEnumerable<edasit.Data.Models.Blok>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = " Blok Raporu";
+}
+@await Html.PartialAsync("_ReportDropdown")
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Blok No</th>
+            <th>Site No</th>
+            <th>Site Adı</th>
+            <th>Blok Adı</th>
+            <th>Kat Sayısı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var blok in Model)
+        {
+            <tr>
+                <td>@blok.BlokNo</td>
+                <td>@blok.SiteNo</td>
+                <td>@blok.SiteNoNavigation?.SiteAdi</td>
+                <td>@blok.BlokAdi</td>
+                <td>@blok.KatSayisi</td>
+            </tr>
+        }
+    </tbody>
+</table>

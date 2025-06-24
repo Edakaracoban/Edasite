@@ -1,0 +1,28 @@
+﻿@model edasit.Data.Models.Site
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "SİTE  GÜNCELLE";
+}
+<form asp-action="Edit" asp-controller="Site" method="post" class="mt-4">
+    <input type="hidden" asp-for="SiteNo" />
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="form-group mb-4">
+                <label asp-for="SiteAdi" class="fw-bold form-label">Site Adı :</label>
+                <input asp-for="SiteAdi" type="text" class="form-control" placeholder="Site Adı giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Adres" class="fw-bold form-label">Adres :</label>
+                <input asp-for="Adres" type="text" class="form-control" placeholder="Adres giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Bilgi" class="fw-bold form-label">Bilgi :</label>
+                <input asp-for="Bilgi" type="text" class="form-control" placeholder="Bilgi giriniz" />
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-success px-5">Güncelle</button>
+                <a asp-action="Index" asp-controller="Site" class="btn btn-secondary ms-2">İptal</a>
+            </div>
+        </div>
+    </div>
+</form>

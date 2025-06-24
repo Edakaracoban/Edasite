@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "DAİRE LİSTELE";
+}
+@model IEnumerable<edasit.Data.Models.Daire>
+
+<div class="row mb-3">
+    <div class="col-md-12 d-flex justify-content-between">
+
+
+            <a asp-action="Create" asp-controller="Daire" class="btn btn-success">Daire Ekle</a>
+
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Metrekare</td>
+            <td>User No</td>
+            <td>İşlemler</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MetreKare</td>
+                <td>@item.UserNo</td>
+                <td>
+                    <a asp-action="Edit" asp-controller="Daire" asp-route-id="@item.DaireNo" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-controller="Daire" asp-route-id="@item.DaireNo" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

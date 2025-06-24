@@ -1,0 +1,26 @@
+﻿@model edasit.Data.Models.Blok
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "BLOK OLUŞTUR";
+}
+<form asp-action="Create" asp-controller="Blok" method="post" class="mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="form-group mb-4">
+                <label asp-for="BlokAdi" class="fw-bold form-label">Blok Adı:</label>
+                <input asp-for="BlokAdi" type="text" class="form-control" placeholder="Blok adı giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="KatSayisi" class="fw-bold form-label">Kat Sayısı:</label>
+                <input asp-for="KatSayisi" type="text" class="form-control" placeholder="Kat Sayısı giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="SiteNo" class="fw-bold form-label">Site No :</label>
+                <select asp-for="SiteNo" class="form-control" asp-items="ViewBag.SiteNo"></select>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-warning px-5">Site Oluştur</button>
+            </div>
+        </div>
+    </div>
+</form> 

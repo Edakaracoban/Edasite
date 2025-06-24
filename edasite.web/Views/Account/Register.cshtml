@@ -1,0 +1,20 @@
+﻿@model edasit.Data.Models.User
+
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="content">
+    <div class="form-container">
+        <h2 style="margin-bottom: 1.5rem;">Kayıt Ol</h2>
+        <form asp-action="Register" method="post">
+            <input asp-for="AdSoyad" placeholder="Ad Soyad" required />
+            <input asp-for="Email" type="email" placeholder="E-posta" required />
+            <input asp-for="Telefon" placeholder="Telefon" required />
+            <input asp-for="Sifre" type="password" placeholder="Şifre" required />
+            <button type="submit">Kayıt Ol</button>
+        </form>
+        <hr style="margin: 2rem 0; border-color: rgba(255,255,255,0.3);" />
+        <p style="margin-bottom: 0.5rem;">Zaten hesabınız var mı?</p>
+        <a class="btn btn-warning" href="/Account/Login" style="text-decoration: none; color: black; font-weight: bold; padding: 0.5rem 2rem; border-radius: 5px;">Giriş Yap</a>
+    </div>
+</div>

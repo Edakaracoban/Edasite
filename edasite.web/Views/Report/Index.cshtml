@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "REPORTS";
+}
+
+<h2>Raporlar</h2>
+
+@await Html.PartialAsync("_ReportDropdown")
+
+@{
+    var selectedReport = ViewData["SelectedReport"] as string;
+}
+
+@if (!string.IsNullOrEmpty(selectedReport))
+{
+    <div>
+        @await Html.PartialAsync($"{selectedReport}Report")
+    </div>
+}

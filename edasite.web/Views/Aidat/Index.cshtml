@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "AİDAT LİSTELE";
+}
+@model IEnumerable<edasit.Data.Models.Aidat>
+
+<div class="row mb-3">
+    <div class="col-md-12 d-flex justify-content-between">
+        <form asp-action="Index" asp-controller="Aidat" method="get" class="form-inline d-flex" onsubmit="return validateSearch();">
+            <input type="text" id="searchInput" name="odemeDurumu" class="form-control mr-2" placeholder="Ödeme durumu ara..." value="@(ViewData["CurrentOdemeDurumu"] ?? "")" />
+            <button type="submit" class="btn btn-primary mr-3">Ara</button>
+            <a asp-action="Create" asp-controller="Aidat" class="btn btn-success">Aidat Ekle</a>
+        </form>
+
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Aidat No</td>
+            <td>Dönem</td>
+            <td>Tutar</td>
+            <td>Ödeme Durumu</td>
+            <td>Site No</td>
+            <td>İşlemler</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AidatNo</td>
+                <td>@item.Donem</td>
+                <td>@item.Tutar</td>
+                <td>@(item.OdemeDurumu ?? "")</td>
+                <td>@item.SiteNo</td>
+                <td>
+                    <a asp-action="Edit" asp-controller="Aidat" asp-route-id="@item.AidatNo" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-controller="Aidat" asp-route-id="@item.AidatNo" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

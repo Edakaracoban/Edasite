@@ -1,0 +1,14 @@
+/Users/a1-02/Projects/edasite/edasit.Data/bin/Debug/net7.0/edasit.Data.deps.json
+/Users/a1-02/Projects/edasite/edasit.Data/bin/Debug/net7.0/edasit.Data.runtimeconfig.json
+/Users/a1-02/Projects/edasite/edasit.Data/bin/Debug/net7.0/edasit.Data.dll
+/Users/a1-02/Projects/edasite/edasit.Data/bin/Debug/net7.0/edasit.Data.pdb
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.csproj.AssemblyReference.cache
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.AssemblyInfoInputs.cache
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.AssemblyInfo.cs
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.csproj.CoreCompileInputs.cache
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.dll
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/refint/edasit.Data.dll
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.pdb
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/edasit.Data.genruntimeconfig.cache
+/Users/a1-02/Projects/edasite/edasit.Data/obj/Debug/net7.0/ref/edasit.Data.dll

@@ -1,0 +1,24 @@
+﻿@model edasit.Data.Models.Daire
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "DAİRE GÜNCELLE";
+}
+<form asp-action="Edit" asp-controller="Daire" method="post" class="mt-4">
+    <input type="hidden" asp-for="DaireNo" />
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="form-group mb-4">
+                <label asp-for="MetreKare" class="fw-bold form-label">Metrekare :</label>
+                <input asp-for="MetreKare" type="text" class="form-control" placeholder="Metrekare giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="UserNo" class="fw-bold form-label">User No :</label>
+                <select asp-for="UserNo" class="form-control" asp-items="ViewBag.UserNo"></select>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-success px-5">Güncelle</button>
+                <a asp-action="Index" asp-controller="Daire" class="btn btn-secondary ms-2">İptal</a>
+            </div>
+        </div>
+    </div>
+</form>

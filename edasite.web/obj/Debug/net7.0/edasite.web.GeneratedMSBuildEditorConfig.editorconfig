@@ -1,0 +1,157 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = edasite.web
+build_property.RootNamespace = edasite.web
+build_property.ProjectDir = /Users/a1-02/Projects/edasite/edasite.web/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/a1-02/Projects/edasite/edasite.web
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Aidat/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWlkYXQvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Aidat/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWlkYXQvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Aidat/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWlkYXQvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Aidat/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWlkYXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Blok/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvay9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Blok/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvay9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Blok/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvay9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Blok/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQmxvay9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Daire/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpcmUvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Daire/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpcmUvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Daire/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpcmUvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Daire/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFpcmUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Report/AidatReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0FpZGF0UmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Report/BlokReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0Jsb2tSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Report/DaireReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0RhaXJlUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Report/SiteReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L1NpdGVSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Report/UserReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVwb3J0L1VzZXJSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Shared/_ReportDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19SZXBvcnREcm9wZG93bi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Site/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2l0ZS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Site/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2l0ZS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Site/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2l0ZS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Site/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2l0ZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/a1-02/Projects/edasite/edasite.web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-shms4ehr7o

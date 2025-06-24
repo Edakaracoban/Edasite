@@ -1,0 +1,28 @@
+﻿@model IEnumerable<edasit.Data.Models.Daire>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = " Daire Raporu";
+}
+@await Html.PartialAsync("_ReportDropdown")
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Daire No</th>
+            <th>Metre Kare</th>
+            <th>User No</th>
+            <th>Ad Soyad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var daire in Model)
+        {
+            <tr>
+                <td>@daire.DaireNo</td>
+                <td>@daire.MetreKare</td>
+                <td>@daire.UserNo</td>
+                <td>@daire.UserNoNavigation?.AdSoyad</td>
+            </tr>
+        }
+    </tbody>
+</table>

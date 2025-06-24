@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "SİTE LİSTELE";
+}
+@model IEnumerable<edasit.Data.Models.Site>
+
+<div class="row mb-3">
+    <div class="col-md-12 d-flex justify-content-between">
+        <form asp-action="Index" method="get" class="form-inline d-flex" onsubmit="return validateSearch();">
+            <input type="text" id="searchInput" name="searchString" class="form-control mr-2" placeholder="Site adı ara..." value="@(ViewData["CurrentFilter"] ?? "")" />
+            <button type="submit" class="btn btn-primary mr-3">Ara</button>
+            <a asp-action="Create" asp-controller="Site" class="btn btn-success">Create</a>
+        </form>
+    </div>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Site No</td>
+            <td>Site Adı</td>
+            <td>Adres</td>
+            <td>Bilgi</td>
+            <td>İşlemler</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SiteNo</td>
+                <td>@(item.SiteAdi ?? "")</td>
+                <td>@(item.Adres ?? "")</td>
+                <td>@(item.Bilgi ?? "")</td>
+                <td>
+                    <a asp-action="Edit" asp-controller="Site" asp-route-id="@item.SiteNo" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-controller="Site" asp-route-id="@item.SiteNo" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+

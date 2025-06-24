@@ -1,0 +1,36 @@
+﻿@model edasit.Data.Models.User
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "USER  GÜNCELLE";
+}
+<form asp-action="Edit" asp-controller="User" method="post" class="mt-4">
+    <input type="hidden" asp-for="UserNo" />
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="form-group mb-4">
+                <label asp-for="AdSoyad" class="fw-bold form-label">Ad Soyad :</label>
+                <input asp-for="AdSoyad" type="text" class="form-control" placeholder="Ad Soyad giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Email" class="fw-bold form-label">Email :</label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="Email giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Telefon" class="fw-bold form-label">Telefon :</label>
+                <input asp-for="Telefon" type="text" class="form-control" placeholder="Telefon giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Rol" class="fw-bold form-label">Rol :</label>
+                <input asp-for="Rol" type="text" class="form-control" placeholder="Rol giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Sifre" class="fw-bold form-label">Şifre :</label>
+                <input asp-for="Sifre" type="text" class="form-control" placeholder="Şifre giriniz" />
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-success px-5">Güncelle</button>
+                <a asp-action="Index" asp-controller="User" class="btn btn-secondary ms-2">İptal</a>
+            </div>
+        </div>
+    </div>
+</form>

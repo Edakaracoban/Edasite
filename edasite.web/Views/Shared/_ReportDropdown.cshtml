@@ -1,0 +1,23 @@
+﻿@{
+    var selectedReport = ViewData["SelectedReport"] as string;
+    var reportOptions = (List<string>)(ViewData["ReportOptions"] ?? new List<string>());
+}
+
+<form method="get" asp-controller="Report" asp-action="Index" class="form-inline mb-3">
+    <select name="reportType" class="form-control mr-2">
+        <option value="">-- Rapor Seçiniz --</option>
+        @foreach (var option in reportOptions)
+        {
+            if (option == selectedReport)
+            {
+                @:<option value="@option" selected="selected">@option</option>
+            }
+            else
+            {
+                @:<option value="@option">@option</option>
+            }
+        }
+    </select>
+
+    <button type="submit" class="btn btn-primary">Göster</button>
+</form>

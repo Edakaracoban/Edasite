@@ -1,0 +1,32 @@
+﻿@model edasit.Data.Models.Site
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "SİTE SİL";
+}
+<form asp-action="Delete" asp-controller="Site" method="post" class="mt-4">
+    <input type="hidden" asp-for="SiteNo" />
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="alert alert-warning text-center fw-bold mb-4">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Bu site kaydını silmek üzeresiniz. Devam etmek istediğinize emin misiniz?</span>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Site Adı:</label>
+                <p class="form-control-plaintext">@Model.SiteAdi</p>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Adres:</label>
+                <p class="form-control-plaintext">@Model.Adres</p>
+            </div>
+            <div class="form-group mb-3">
+                <label class="fw-bold">Bilgi:</label>
+                <p class="form-control-plaintext">@Model.Bilgi</p>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger px-4">Sil</button>
+                <a asp-action="Index" asp-controller="Site" class="btn btn-secondary ms-2">İptal</a>
+            </div>
+        </div>
+    </div>
+</form>

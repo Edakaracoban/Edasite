@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <ProjectReference Include="..\edasit.Data\edasit.Data.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\User\" />
+    <None Remove="Views\Site\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Views\Blok\" />
+    <None Remove="Views\Daire\" />
+    <None Remove="Views\Aidat\" />
+    <None Remove="Views\Report\" />
+    <None Remove="Views\ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\User\" />
+    <Folder Include="Views\Site\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Views\Blok\" />
+    <Folder Include="Views\Daire\" />
+    <Folder Include="Views\Aidat\" />
+    <Folder Include="Views\Report\" />
+    <Folder Include="Views\ViewModel\" />
+  </ItemGroup>
+</Project>

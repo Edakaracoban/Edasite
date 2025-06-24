@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "BLOK LİSTELE";
+}
+@model IEnumerable<edasit.Data.Models.Blok>
+
+<div class="row mb-3">
+    <div class="col-md-12 d-flex justify-content-between">
+        <form asp-action="Index" asp-controller="Blok" method="get" class="form-inline d-flex" onsubmit="return validateSearch();">
+            <input type="text" id="searchInput" name="searchString" class="form-control mr-2" placeholder="Blok adı ara..." value="@(ViewData["CurrentFilter"] ?? "")" />
+            <button type="submit" class="btn btn-primary mr-3">Ara</button>
+            <a asp-action="Create" asp-controller="Blok" class="btn btn-success">Blok Ekle</a>
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Blok No</td>
+            <td>Blok Adı</td>
+            <td>Kat Sayısı</td>
+            <td>Site No</td>
+            <td>İşlemler</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.BlokNo</td>
+                <td>@(item.BlokAdi ?? "")</td>
+                <td>@item.KatSayisi</td>
+                <td>@item.SiteNo</td>
+                <td>
+                    <a asp-action="Edit" asp-controller="Blok" asp-route-id="@item.BlokNo" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-controller="Blok" asp-route-id="@item.BlokNo" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

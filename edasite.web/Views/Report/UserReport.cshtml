@@ -1,0 +1,30 @@
+﻿@model IEnumerable<edasit.Data.Models.User>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = " User Raporu";
+}
+@await Html.PartialAsync("_ReportDropdown")
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>User No</th>
+            <th>Ad Soyad</th>
+            <th>Email</th>
+            <th>Telefon</th>
+            <th>Rol</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserNo</td>
+                <td>@user.AdSoyad</td>
+                <td>@user.Email</td>
+                <td>@user.Telefon</td>
+                <td>@user.Rol</td>
+            </tr>
+        }
+    </tbody>
+</table>

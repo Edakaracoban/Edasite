@@ -1,0 +1,32 @@
+﻿@model edasit.Data.Models.Aidat
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "AİDAT GÜNCELLE";
+}
+<form asp-action="Edit" asp-controller="Aidat" method="post" class="mt-4">
+    <input type="hidden" asp-for="AidatNo" />
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="form-group mb-4">
+                <label asp-for="Donem" class="fw-bold form-label">Dönem :</label>
+                <input asp-for="Donem" type="text" class="form-control" placeholder="Dönem giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Tutar" class="fw-bold form-label">Tutar :</label>
+                <input asp-for="Tutar" type="text" class="form-control" placeholder="Tutar giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="OdemeDurumu" class="fw-bold form-label">Ödeme Durumu :</label>
+                <input asp-for="OdemeDurumu" type="text" class="form-control" placeholder="Ödeme Durumu giriniz" />
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="SiteNo" class="fw-bold form-label">Site No :</label>
+                <select asp-for="SiteNo" class="form-control" asp-items="ViewBag.SiteNo"></select>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-success px-5">Güncelle</button>
+                <a asp-action="Index" asp-controller="Aidat" class="btn btn-secondary ms-2">İptal</a>
+            </div>
+        </div>
+    </div>
+</form>
